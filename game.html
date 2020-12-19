@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Nova+Square&display=swap" rel="stylesheet">
+    <style>
+        body {
+      background-image: url('https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash-1024x683.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      }
+    
+      </style>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./app.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id = "hud" >
+                <div id ="hud-item">
+                    <p class = "hud-prefix"> Question</p>
+                    <h3 class ="hud-main-text" id= "questionCounter"></h3>
+                   
+                </div>
+            
+                <div id ="hud-item">
+                    <p class = "hud-prefix"> Score</p>
+                    <h4 class ="hud-main-text" id="score">0</h4>    
+       
+                        
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 id="question">What is the answer to this questions?</h2>
+            <div class="choice-container">
+                <p class="choice-perfix">A</p>
+                <p class="choice-text" data-number="1">Choice 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-perfix">B</p>
+                <p class="choice-text"data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-perfix">C</p>
+                <p class="choice-text"data-number="3">Choice 3</p>
+            </div>
+        </div>
+        <div>
+        <div id=time></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

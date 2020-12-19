@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Nova+Square&display=swap" rel="stylesheet">
+    <style>
+        body {
+      background-image: url('https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash-1024x683.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      }
+    
+      </style>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="app.css"/>
+
+</head>
+<body>
+     <div class="container">
+        <div id="end" class= "flex-center flex-column">
+           <h5 id ="finalScore"></h5>
+        
+        <form>
+        <input 
+        type="text"
+        initial="initial"
+        id="initial"
+        placeholder="Enter Initial"
+        />
+      
+       
+    </form>
+    </div>
+    <div>
+    <button type ="submit" class ="btn1" id="saveScoreBtn1" onclick="saveHighScore(event)" disabled>Save</button>
+    </div>
+    <div class="card-footer text-muted">
+            
+        <a class= "btn2" href="index.html">Retake Quiz</a></a>
+    </div>
+    </div> 
+    
+
+
+    <script src="end.js"></script>
+</body>
+</html>
